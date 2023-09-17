@@ -4,6 +4,8 @@
 # libminer
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/LibbyHeeren/libminer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LibbyHeeren/libminer/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of libminer is to help you understand your libraries better,
@@ -28,10 +30,10 @@ This is a basic example which shows you how to solve a common problem:
 library(libminer)
 
 lib_summary()
-#>                                                                Library
-#> 1                                   C:/Program Files/R/R-4.2.2/library
-#> 2                       C:/Users/libby/AppData/Local/R/win-library/4.2
-#> 3 C:/Users/libby/AppData/Local/Temp/RtmpCmhsWn/temp_libpath49b086b5536
+#>                                                                 Library
+#> 1                                    C:/Program Files/R/R-4.2.2/library
+#> 2                        C:/Users/libby/AppData/Local/R/win-library/4.2
+#> 3 C:/Users/libby/AppData/Local/Temp/RtmpCmhsWn/temp_libpath49b053061e1d
 #>   n_packages
 #> 1         30
 #> 2        246
@@ -40,14 +42,14 @@ lib_summary()
 # You can also calculate sizes
 
 lib_summary(sizes = TRUE)
-#>                                                                Library
-#> 1                                   C:/Program Files/R/R-4.2.2/library
-#> 2                       C:/Users/libby/AppData/Local/R/win-library/4.2
-#> 3 C:/Users/libby/AppData/Local/Temp/RtmpCmhsWn/temp_libpath49b086b5536
+#>                                                                 Library
+#> 1                                    C:/Program Files/R/R-4.2.2/library
+#> 2                        C:/Users/libby/AppData/Local/R/win-library/4.2
+#> 3 C:/Users/libby/AppData/Local/Temp/RtmpCmhsWn/temp_libpath49b053061e1d
 #>   n_packages  lib_size
 #> 1         30  66912994
 #> 2        246 551561530
-#> 3          1     13241
+#> 3          1     16986
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`?
